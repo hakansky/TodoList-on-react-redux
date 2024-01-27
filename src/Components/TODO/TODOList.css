@@ -1,0 +1,94 @@
+.TodoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TodoList h1 {
+    font-size: 100px;
+}
+
+.TodoList ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.TodoList .ClearAll {
+    background-color: lightgrey;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 15px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.CompletedTask {
+    opacity: 50%;
+    text-decoration: line-through;
+}
+
+.TodoList ul li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #838383;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.TodoList ul li:hover {
+    scale: 105%;
+}
+
+.TodoList ul button {
+    background-color: lightgrey;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 15px;
+    transition: 0.3s;
+    margin: 5px auto;
+}
+
+.TodoList ul li p {
+    width: 70%;
+    overflow-wrap: break-word;
+    margin: auto 20px;
+}
+
+.TodoList .Input input {
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    margin-right: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.Input input:focus {
+    outline: black;
+}
+
+.Input button:hover,
+.ClearAll:hover,
+.TodoList ul button:hover {
+    transform: scale(105%);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.Input button {
+    background-color: lightgrey;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
